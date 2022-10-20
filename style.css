@@ -41,7 +41,6 @@ h3 {
 }
 
 .resume {
-  width: 960px;
   background: #1a237e;
   color: #ffffff;
   margin: 20px auto;
@@ -221,6 +220,7 @@ h3 {
 
 .resume .func:hover > div {
   transition-duration: 0.5s;
+    color: #fdd835;
 }
 
 .resume .func:hover > div:hover h3 i {
@@ -231,24 +231,20 @@ h3 {
   opacity: 0.5;
 }
 
-.resume .func h3 {
-  transition-duration: 0.3s;
-  margin-top: 0;
+.resume .func h3 i {
+    color: #283593;
+    background: #ffb300;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
 }
 
-.resume .func h3 i {
-  color: #283593;
-  background: #ffb300;
-  width: 42px;
-  height: 42px;
-  font-size: 20px;
-  line-height: 42px;
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: middle;
-  margin-right: 8px;
-  transition-duration: 0.3s;
-}
 
 .resume .func .work,
 .resume .func .edu {
@@ -347,15 +343,9 @@ h3 {
   transition-duration: 0.3s;
 }
 
-.resume .func .work {
-  width: 48%;
-  background: #283593;
-  padding: 15px;
-  margin: 0 4% 15px 0;
-}
 
 .resume .func .edu {
-  width: 48%;
+  width: 100%;
   background: #283593;
   padding: 15px;
 }
@@ -412,7 +402,7 @@ h3 {
   clear: both;
   background: #283593;
   padding: 15px;
-  margin: 15px 0 0;
+
 }
 
 .resume .func .skills-soft ul {
@@ -467,12 +457,11 @@ h3 {
 
 .resume .func .interests {
   background: #283593;
-  margin: 15px 0 0;
   padding: 15px;
 }
 
 .resume .func .interests-items {
-  box-sizing: border-box;
+  box-sizing: content-box;
   padding: 0 0 15px;
   width: 100%;
   text-align: center;
